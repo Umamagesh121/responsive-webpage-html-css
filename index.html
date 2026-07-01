@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .header {
+            padding: 60px;
+            text-align: center;
+            background-color: seagreen;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: lightgray;
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar a {
+            color: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            flex: 30%;
+            background-color: azure;
+            padding: 20px;
+        }
+
+        .main-content {
+            flex: 70%;
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+
+        .title-image {
+            background-color: tan;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            padding: 20px;
+        }
+
+        .img {
+            background-color: #ffcc5c;
+            width: 50%;
+            max-width: 50%;
+            height: auto;
+            padding: 10px;
+            border-radius: 8px;
+            position: relative;
+
+            animation-name: image;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes image {
+            0% {
+                background-color: #FFFF33;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: #ffcc33;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: #ff9933;
+                left: 200px;
+                top: 50px;
+            }
+
+            75% {
+                background-color: #ff6633;
+                left: 0px;
+                top: 50px;
+            }
+
+            100% {
+                background-color: #ff3333;
+                left: 0px;
+                top: 0px;
+            }
+
+        }
+
+        .footer {
+            padding: 5px;
+            text-align: center;
+            background-color: cadetblue;
+        }
+    </style>
+    <div style="background-color: pink; padding: 2px;">
+        <h4 style="text-align: center;">This is the css assignment using the varius css propertices along with
+            responsive web design.</h4>
+    </div>
+    <div class="header">
+        <h1>Welcome to Responsive web page</h1>
+        <p>with a <strong>addjasable and reactive</strong>layout.</p>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="contect.html">Contact</a>
+    </div>
+
+    <div class="row">
+        <div class="sidebar">
+            <h2>About Internship Studio </h2>
+            <h5>photo of intenshiip studio</h5>
+            <img src="image/web1.avif" class="title-image" style="height: 200px;">
+            <p> Web page content is the collection of text, images, videos, and interactive elements Elementor that
+                deliver information
+                to users, which includes blog posts, product pages, videos, and functional code. Effective content is
+                purposeful,
+                accurate, and structured to guide users through their experience, often aimed at driving</p>
+            <h3>Web Design Course</h3>
+            <p>Website design is the process of planning, creating, and arranging digital content, focusing on both
+                aesthetics (UI) and
+                user experience (UX) to create functional websites. Key elements include layout, typography, color
+                schemes, navigation,
+                and mobile responsiveness.</p>
+
+            <img src="image/icon/icon1.jpeg" class="img" style="height: 60px;">
+        </div>
+        <div class="main-content">
+            <h2>WEBSITE DESIGN</h2>
+            <h5>strating from may 24,2026</h5>
+            <img src="image/web2.webp" class="title-image" style="height: 200px;">
+            <p>Website content design is the strategic process of planning, creating, and organizing digital information
+                to meet user
+                needs, focusing on readability, usability, and, importantly, user experience (UX).</p>
+            <p>Website content design is the strategic process of planning, creating, and organizing digital information
+                to meet user
+                needs, focusing on readability, usability, and, importantly, user experience (UX). It involves
+                structuring text,
+                visuals, and navigation to help users achieve goals efficiently, often by using data to guide decisions
+                on content
+                placement and format</p>
+            <h2> Who is this Internship is for:</h2>
+            <h5>your internship will be begun on the 17th of jan, 2026</h5>
+            <ul>
+                <li>User-Centricity: Research and structure content based on what users need to know, not just what the
+                    business wants to
+                    say.</li>
+                <li>Create Content: Focus on user needs through research-driven, clear copy and visuals.</li>
+                <li>Wireframing: Build a visual guide to arrange content components before final design.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>@Internship Studio</h2>
+    </div>
+</body>

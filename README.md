@@ -187,7 +187,7 @@ This project demonstrates:
 
 model resume: **http://magesh15.neocities.org/
 
-view :https://github.com/Umamagesh121/responsive-webpage-html-css.git
+view :https://umamagesh121.github.io/responsive-webpage-html-css/
 ---
 
 # 📄 License
